@@ -6,8 +6,11 @@ use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
-    public function index(Request $request)
+    public function index(Request $request, $number = null)
     {
-        return view('about')->with('request', $request);
+        return view('about')->with([
+            'request' => $request,
+            'number' => $number
+        ]);
     }
 }

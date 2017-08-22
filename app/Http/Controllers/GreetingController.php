@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 class GreetingController extends Controller
 {
-    public function create() {
+    public function create()
+    {
         $person = [
             'firstName' => request('person.firstName', 'super cool'),
             'lastName' => request('person.lastName', 'anonymoose'),
