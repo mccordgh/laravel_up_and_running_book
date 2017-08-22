@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'About section yeaaaa boi')
+@section('title', 'CONTACTZ')
 
 @section('content')
     <h1>1 800 COOL PROGRAMMING @TWITTER DOT FACEMAN.</h1>

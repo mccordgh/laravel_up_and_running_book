@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'About section yeaaaa boi')
+@section('title', 'ABOOT')
 
 @section('content')
     <h1>I AM GRATE. KILLER IN FACT.</h1>
