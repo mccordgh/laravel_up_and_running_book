@@ -22,3 +22,8 @@ h1.radical {
     background-color: black;
     color: pink;
 }
+
+em {
+    color: forestgreen;
+    display: inline;
+}

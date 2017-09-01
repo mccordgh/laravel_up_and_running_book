@@ -1,6 +1,11 @@
 <?php
 
-Route::get('/', 'HomeController@index');
+Route::get('/', function () {
+    return redirect('home');
+});
+
+Route::get('home', 'HomeController@index');
+Route::get('home/{food}', 'HomeController@index');
 Route::get('about', 'AboutController@index');
 Route::get('about/{number}', 'AboutController@index');
 Route::get('contact', 'ContactController@index');

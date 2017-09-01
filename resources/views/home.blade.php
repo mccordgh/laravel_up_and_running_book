@@ -56,5 +56,38 @@
             <input type="submit">
         </form>
     </div>
+    <br>
+    <div style="width:100%;text-align:center;font-size:18px;">
+        <h1>check out our users!</h1>
+        @if(isset($food))
+            <h2><a href="/">View all Users</a></h2>
+        @else
+            <h2>click on a food to see all users who love that food!</h2>
+        @endif
+        <ul>
+            @if (count($users) === 1)
+                <li style="padding:10px 50px;display: inline-block">
+                    Only <em>{{$users[0]->name}}</em> likes <em>{{$food}}</em> :^(
+                </li><br>
+            @elseif (isset($food))
+                <li style="padding:10px 50px;display: inline-block">
+                    <em>{{count($users)}}</em> users like <em>{{$food}}</em> :^)
+                </li><br>
+            @endif
+            @foreach($users as $user)
+                <li style="padding:10px 50px;display: inline-block">
+                    <em>
+                        {{ $user->name }}
+                    </em>
+                    - Favorite Food:
+                    <a href="home/{{$user->food}}">
+                        <em>
+                            {{ $user->food }}!
+                        </em>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
+    </div>
     <br><br>
 @endsection

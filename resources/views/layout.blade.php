@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>@yield('title', 'the testerino')</title>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="{{ elixir('css/main.css') }}">
     </head>
     <body>
         <div class="nav">
@@ -10,7 +10,6 @@
         </div>
         <div class="container">
             @if ($errors->any())
-                {{ var_dump($errors->all()) }}
                 <ul id="errors">
                     @foreach ($errors->all() as $error)
                         <li style="color:red;font-weight:bold;">{{ $error }}</li>
