@@ -22,6 +22,7 @@ class UserInfosTableSeeder extends Seeder
 
     private function addUserInfo($user) {
         DB::table('user_infos')->insert([
+            'uid' => 1,
             'first_name' => $user[0],
             'last_name' => $user[1],
             'status' => $user[2],
