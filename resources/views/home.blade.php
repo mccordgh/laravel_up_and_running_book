@@ -6,6 +6,7 @@
     <h1>
         Welcome to your new HOME. here is links:<br>
         <a href="about">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="roster"><em>OUR ROSTER!</em></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="contact">CONTACT</a>
     </h1>
 
@@ -75,7 +76,7 @@
                 </li><br>
             @endif
             @foreach($users as $user)
-                <li style="padding:10px 50px;display: inline-block">
+                <li style="padding:10px 30px;display: inline-block">
                     <em>
                         {{ $user->name }}
                     </em>
@@ -89,5 +90,4 @@
             @endforeach
         </ul>
     </div>
-    <br><br>
 @endsection

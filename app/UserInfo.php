@@ -13,7 +13,7 @@ class UserInfo extends Model
 
     public function scopeStatus($query, $status)
     {
-        return $query->where('status', $status)->OrderBy('last_name');
+        return $query->where('status', $status);
     }
 //    public function scopeAllVips($query)
 //    {

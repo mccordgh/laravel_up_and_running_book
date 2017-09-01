@@ -12,6 +12,12 @@ div.section {
     background-color: #eee;
     width: 30%;
     display: inline-block;
+    text-align: center;
+}
+
+div.nav {
+    padding: 0;
+    background-color: black;
 }
 
 h1 {
@@ -21,6 +27,8 @@ h1 {
 h1.radical {
     background-color: black;
     color: pink;
+    padding-top: 10px;
+    margin: 0;
 }
 
 em {
