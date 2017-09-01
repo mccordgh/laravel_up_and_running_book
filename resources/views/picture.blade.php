@@ -8,5 +8,4 @@
     <br>
     {{ $path }}
     <br>
-    <a href="/">GO HOME</a>
 @endsection

@@ -10,5 +10,4 @@
         {{ $person['suffix'] }}</h1>
 
     <hr/>
-    <a href="/">GO HOME</a>
 @endsection

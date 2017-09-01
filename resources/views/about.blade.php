@@ -7,5 +7,4 @@
     @if($number)
         <h2>GRATE x{{ $number }}</h2>
     @endif
-    <a href="/">GO HOME</a>
 @endsection

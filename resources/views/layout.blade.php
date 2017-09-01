@@ -20,9 +20,8 @@
             @yield('content')
         </div>
         @section('footer')
-            <hr>
             <h1 class="radical">
-                <<<<<<<<<< 😎 SWEET FOOTER 😎 >>>>>>>
+                <<<<<<<<<< <a href="/" style="color:palegoldenrod">GO HOME</a> 😎 SWEET FOOTER 😎 <a href="/" style="color:palegoldenrod">GO HOME</a> >>>>>>>
             </h1>
         @show
     </body>
