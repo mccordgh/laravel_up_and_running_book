@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace LaravelUpAndRunning\Http\Controllers;
 
 class GreetingController extends Controller
 {

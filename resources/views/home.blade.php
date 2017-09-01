@@ -4,8 +4,8 @@
 
 @section('content')
     <h1>
-        Welcome to your new HOME. here is links:
-        <a href="about">ABOUT</a>
+        Welcome to your new HOME. here is links:<br>
+        <a href="about">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="contact">CONTACT</a>
     </h1>
 
