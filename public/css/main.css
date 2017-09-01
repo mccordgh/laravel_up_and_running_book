@@ -1,0 +1,24 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: #f7f7f7;
+    padding: 1em;
+}
+
+div.section {
+    background-color: #eee;
+    width: 30%;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1.radical {
+    background-color: black;
+    color: pink;
+}

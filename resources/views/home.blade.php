@@ -9,7 +9,7 @@
         <a href="contact">CONTACT</a>
     </h1>
 
-    <div style="border:solid 1px grey;">
+    <div class="section">
         <h1>Get a greeting, my friend:</h1>
         <form method="post" action="/greeting">
             {{ csrf_field() }}
@@ -28,9 +28,8 @@
             <input type="submit" />
         </form>
     </div>
-    <br><br>
 
-    <div style="border:solid 1px grey;">
+    <div class="section">
         <h1>upload a picture!</h1>
         <form method="post" action="picture" enctype="multipart/form-data">
             {{ csrf_field() }}
@@ -43,9 +42,8 @@
             <input type="submit">
         </form>
     </div>
-    <br><br>
 
-    <div style="border:solid 1px grey;">
+    <div class="section">
         <h1>Error validation. Mess this up! Break the rules!</h1>
         <form method="post" action="errors">
             {{ csrf_field() }}

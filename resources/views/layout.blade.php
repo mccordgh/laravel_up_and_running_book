@@ -1,10 +1,11 @@
 <html>
     <head>
         <title>@yield('title', 'the testerino')</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <div class="nav">
-            <h1><<<<<<<<<< COOOOOOOL NAV >>>>>>></h1>
+            <h1 class="radical"><<<<<<<<<< 😎 COOOOOOOL NAV 😎 >>>>>>></h1>
             <hr>
         </div>
         <div class="container">
@@ -21,7 +22,9 @@
         </div>
         @section('footer')
             <hr>
-            FOOTER DUUUUUUDE MCCORDINATOR DOT COOOOOOOOOOOOOOOOOOOOOOOOL 😎
+            <h1 class="radical">
+                <<<<<<<<<< 😎 SWEET FOOTER 😎 >>>>>>>
+            </h1>
         @show
     </body>
 </html>
