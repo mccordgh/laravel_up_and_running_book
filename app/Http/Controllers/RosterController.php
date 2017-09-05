@@ -18,13 +18,14 @@ class RosterController extends Controller
     {
         $patronsByStatus = [];
         $statusNames = ['vip', 'member', 'none'];
-//
+
         foreach($statusNames as $name)
         {
             $thisStatus = UserInfo::status($name)->get()->toArray();
 
             foreach($thisStatus as $index => $status){
                 $status['name'] = array_flatten(User::where('id', $status['uid'])->get(['name'])->toArray())[0];
+                //->value('name')
                 $thisStatus[$index] = $status;
             }
 
