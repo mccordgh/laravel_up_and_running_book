@@ -24,8 +24,7 @@ class RosterController extends Controller
             $thisStatus = UserInfo::status($name)->get()->toArray();
 
             foreach($thisStatus as $index => $status){
-                $status['name'] = array_flatten(User::where('id', $status['uid'])->get(['name'])->toArray())[0];
-                //->value('name')
+                $status['name'] = User::where('id', $status['uid'])->value('name');
                 $thisStatus[$index] = $status;
             }
 

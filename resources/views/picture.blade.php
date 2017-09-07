@@ -4,8 +4,10 @@
 
 @section('content')
     <h1>{{ $title }}</h1>
-    <img src="{{ $path }}">
+    <div class="section" style="margin: 0 auto;">
+        <img src="{{ $path }}">
+    </div>
     <br>
-    {{ $path }}
+    <h1>WHAT A <em>RADICAL</em> pic duuuuuuude!</h1>
     <br>
 @endsection

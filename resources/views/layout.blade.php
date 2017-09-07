@@ -21,7 +21,7 @@
         </div>
         @section('footer')
             <h1 class="radical">
-                <<<<<<<<<< <a href="/" style="color:palegoldenrod">GO HOME</a> 😎 SWEET FOOTER 😎 <a href="/" style="color:palegoldenrod">GO HOME</a> >>>>>>>
+                <<<<<<<<<< <a href="/test-dashboard" style="color:palegoldenrod">GO HOME</a> 😎 SWEET FOOTER 😎 <a href="/test-dashboard" style="color:palegoldenrod">GO HOME</a> >>>>>>>
             </h1>
         @show
     </body>
