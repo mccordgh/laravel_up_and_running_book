@@ -60,7 +60,22 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <label for="name" class="col-md-4 control-label">Favorite Food</label>
+
+                    <div class="form-group{{ $errors->has('food') ? ' has-error' : '' }}">
+                        <div class="col-md-6">
+                            <input id="food" type="text" class="form-control" name="food" value="{{ old('food') }}" required>
+
+                            @if ($errors->has('food'))
+                                <span class="help-block">
+                                        <strong>{{ $errors->first('food') }}</strong>
+                                    </span>
+                            @endif
+                        </div>
+                    </div>
+
+
+                <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Register

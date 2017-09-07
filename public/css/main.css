@@ -8,9 +8,15 @@ div {
     padding: 1em;
 }
 
+div.container {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
 div.section {
     background-color: #eee;
-    width: 30%;
+    width: 33%;
     display: inline-block;
     text-align: center;
 }
@@ -20,8 +26,14 @@ div.nav {
     background-color: black;
 }
 
+em {
+    color: forestgreen;
+    display: inline;
+}
+
 h1 {
     text-align: center;
+    margin: 0 0 15px 0;
 }
 
 h1.radical {
@@ -29,9 +41,4 @@ h1.radical {
     color: pink;
     padding-top: 10px;
     margin: 0;
-}
-
-em {
-    color: forestgreen;
-    display: inline;
 }

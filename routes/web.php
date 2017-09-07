@@ -1,8 +1,8 @@
 <?php
 
-//Route::get('/', function () {
-//    return redirect('dashboard');
-//});
+Route::get('/', function () {
+    return redirect('login');
+});
 
 Route::get('test-dashboard', 'TestDashboardController@index');
 Route::get('test-dashboard/{food}', 'TestDashboardController@index');

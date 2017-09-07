@@ -12,11 +12,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ elixir('css/main.css') }}">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
                 <div class="navbar-header">
 
                     <!-- Collapsed Hamburger -->
@@ -29,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        MCCORDINATOR INC.
                     </a>
                 </div>
 
@@ -68,11 +68,15 @@
                         @endif
                     </ul>
                 </div>
-            </div>
         </nav>
 
         @yield('content')
     </div>
+
+        @section('footer')
+            <h1 class="radical">
+                <<<<<<<<<< <a href="/test-dashboard" style="color:palegoldenrod">GO HOME</a> 😎 SWEET FOOTER 😎 <a href="/test-dashboard" style="color:palegoldenrod">GO HOME</a> >>>>>>>
+            </h1>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

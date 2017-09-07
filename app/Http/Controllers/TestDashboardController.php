@@ -1,28 +1,24 @@
 <?php
-
 namespace LaravelUpAndRunning\Http\Controllers;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
-class HomeController extends Controller
+class TestDashboardController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $food = $request->food;
+        $usersAndFood = DB::table('users')
+            ->select('name', 'food')
+            ->orderBy('name', 'asc');
+        $users = isset($food)
+            ? $usersAndFood->where('food', $food)->get('name')
+            : $usersAndFood->get();
+        return view('test-dashboard')->with(['users' => $users, 'food' => $food]);
     }
 }
